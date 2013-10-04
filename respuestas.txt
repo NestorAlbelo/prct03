@@ -1,0 +1,116 @@
+21) La principal diferencia entre las comillas simples y las dobles esta en que las dobles permiten la interpolacion de cadenas, con lo que las expresiones que se encuentren dentro de ellas se analizan.
+
+22 y 23) Con %q y %Q se representan String con metacaracteres como comillas simples o dobles, pero el primero forma el String con comillas simples y el segundo con comillas dobles.
+
+24 y 25) En el primer ejemplo se almacenan "c" el contenido de las variables indicadas dentro del documento HERE. Por otro lado en el siguiente ejemplo no se analizan las expresiones, porque se le pusieron a HERE las comillas simples por lo que solo sale las cadenas puestas en el documento.
+
+26)Lo que se hace cuando se usan los corchetes en "s" es mostrar los caracteres delimitados por el rango indicado.
+
+27) Cuando se usa "g << " world"" se esta aÃ±adiendo ese string a lo que ya estaba en "g" por lo que se queda "Hello World".
+
+28) Lo que se esta almacenando es el caracter '.' tres veces en "e".
+
+29) Se representa tres veces la expresion indicada, con lo que da "222".
+
+30, 31 y 32) Con el %w y %W se crean arrays de los que se le pase, pero la difencia entre ambos es que %w lo crea de forma literal, mientras que %W lo hace con evaluacion de expresiones.
+
+33 y 34) En el primero se crea un array de dimension 3 con todos sus elementos en nil y se guarda en la variable "nils", mientras que en el segundo caso se rellena con el numero indicado despues del tamaÃ±o del array.
+
+35) En este caso al Array.new no recibir un tipo simple lo que hace es interpretar que lo que se le esta pasando directamente son lo elementos y crea un array de tamaÃ±o 2 con los elementos indicados.
+
+36) En la variable "c" se almacena un array de tamaño 3 con los multiplos de 2 empezando por 0.
+
+37) Primero en la variable se guarda las letras comprendidas desde la "a" hasta la "e" del abecedario y despues se acceden a ellas segun sus posiciones. Los resultados son:
+	- a[1,1] = ["b"]
+	- a[-2,2] = ["d", "e"] 
+	- a[0..2] = ["a", "b", "c"] 
+	- a[0...1] = ["a"] 
+	- a[-2..1] = ["d", "e"]  
+
+38) En este apartado se añaden, modifican y eliminan elementos del array de "a". Las salidas son:
+	- ["A", "B", "c", "d", "e"]
+	- ["A", "B", "C", "D", "E"]
+	- [1, 2, 3, "A", "B", "C", "D", "E"]
+	- [3, "A", "B", "C", "D", "E"]
+	- [3, "A", "B", "C", "D", "Z"]
+	- [3, "A", "B", "C", nil]
+
+39) Las salidas son:
+	- [1, 2, 3]
+	- [1, 2, 3, 4, 5]
+	- [1, 2, 3, 4, 5, [6, 7, 8]]
+	- TypeError: no implicit conversion of Fixnum into Array......
+
+40) Las salidas son:
+	- ["a", "b", "c", "b", "a"]
+	- ["a", "a"]
+
+41) Las salidas son: 
+	- [0, 0, 0, 0, 0, 0, 0, 0]
+
+42) Las salidas son:
+	- [1]
+	- [1, 2, 3]
+	- [1, 2, 3, [4, 5, 6]]
+	- [1, 2, 3, [4, 5, 6], 7, 8]
+
+43) Las salidas son:
+	- [1, 2, 3, 4, 5]
+	- [5, 4, 3, 2, 1]
+	- [2, 3, 4]
+	- [4, 3, 2]
+
+44) Las salidas son:
+	- [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+	- [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	- false
+	- true
+	- 1 3 5 7 9 => 1...10
+
+45) Las salidas son:
+	- true
+	- true
+	- true
+
+46) Las salidas son:
+	- TrueClass
+	- FalseClass
+	- hello
+	- 
+	- hello
+
+47) Las salidas son: 
+	- Symbol
+	- false
+	- true
+	- Symbol
+	- true
+ 	- true
+
+48) Las salidas son:
+	- Rub=> nil
+	-RubJava=> nil
+
+49) La salida es:
+	- "3 rubies"
+
+50) Las salidas son:
+	- [4, 5]
+	- 5
+	- [1, 2, 3]
+
+51) Las salidas son:
+	- [:a, :b]
+	- [1, 2]
+	- {:a=>1, :b=>2, :c=>3}
+	- {:a=>1, :b=>2, :c=>3}
+	- {:b=>2, :c=>3}
+	- {:a=>1}
+	- {:a=>1}
+
+52) El objetivo de yield es el de llamar al bloque que se le pase a la funcion para ejecutarlo.
+
+53) La diferencia es que en el primero se crea un hash o diccionario y en el segundo un array.
+
+54) La salida es:
+	- ["hello", "world", "hello", "LPP"]
